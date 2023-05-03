@@ -9,3 +9,7 @@ updates:
     directory: /
     schedule:
       interval: daily
+    ignore:
+      # The node version for the action is set to 16
+      - dependency-name: "@types/node"
+        versions: ">16"
